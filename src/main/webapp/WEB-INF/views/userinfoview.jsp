@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-税抜き価格
-<c:out value="${totalPrice}"/>円<br>
-税込み価格
-<c:out value="${tatalPriceIncludeTax}"/>円<br>
-
-
+<h2>詳細情報</h2>
+名前<c:out value="${user.name}"/><br>
+年齢<c:out value="${user.age}"/><br>
+住所<c:out value="${user.address}"/><br>
 </body>
 </html>
